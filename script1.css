@@ -1,0 +1,31 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.getElementById('login-form');
+    const farmerInfoSection = document.getElementById('farmer-info');
+
+    loginForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // For demonstration, we'll just show the farmer info section
+        // In a real application, you would handle authentication here
+        farmerInfoSection.style.display = 'block';
+    });
+
+    // Handle the information form submission
+    const infoForm = document.getElementById('info-form');
+    infoForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent the form from submitting normally
+
+        // Collect form data (for demonstration purposes)
+        const formData = new FormData(infoForm);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        // In a real application, you would send this data to a server
+        console.log('Farmer Information Submitted:', data);
+
+        // Optionally clear the form or show a success message
+        infoForm.reset();
+    });
+});

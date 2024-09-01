@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Login</h1>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username"><h3>Username:</h3></label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password"><h3>Password:</h3></label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="button">Login</button>
+        </form>
+        <div id="success-message" style="display: none;">
+            <p class="success-text">Successfully logged in!</p>
+        </div>
+        <div id="user-info" style="display: none;">
+            <h1>LOGIN</h1>
+            <form id="info-form">
+                <div class="form-group">
+                    <label for="name"><h3>Name:</h3></label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="phone"><h3>Phone Number:</h3></label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="otp"><h3>Enter OTP:</h3></label>
+                    <input type="tel" id="otp" name="otp">
+                </div>
+                
+                <button type="submit" class="button">LOGIN</button>
+            </form>
+        </div>
+        <p class="form__text">
+            <a href="#" class="form__link">Forgot password</a>
+          </p>
+        <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

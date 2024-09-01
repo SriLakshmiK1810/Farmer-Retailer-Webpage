@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+
+margin:0;
+height : 100vh;
+display:flex;
+align-items:center;
+justify-content: center;
+font-size: 18px;
+background : url(./background.jpg);
+background-size:cover;
+}
+
+.container {
+    text-align: center;
+    width:400px;
+    max-width: 400px;
+    box-shadow: 0 0 40px rgba(0,0,0,0) ;
+    border-radius: var(--border-radius);
+    background: transparent;
+    
+}
+h1, h2 {
+    
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom:17px;
+    width:400px;
+    max-width: 400px;
+    text-align: left;
+}
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(5, 213, 255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: rgb(3, 255, 251);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+.form__text{
+    color: black;
+    text-align:center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.success-text {
+    color: #fefffe;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.signup-link {
+    color: white;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #ffffff;
+    text-decoration:none;
+}
+
+.signup-link a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+.signup-link a:active {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+}
+.form-group--hidden{
+    display: none;
+ }
+ 
