@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+   
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .account-box{
+    /* background-color: red; */
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    
+    }
+  
+  .account-box h2{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  .input-group{
+    position: relative;
+    margin: 20px 0;
+  
+  }
+  .input-group input{
+    height: 50px;
+    width: 350px;
+    outline: none;
+    border: 1px solid black;
+    margin-left: 23px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .input-group label{
+    position: absolute;
+    top: 30%;
+    left: 80px;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s ;
+    pointer-events: none;
+  }
+
+  .input-group input:focus~label,
+  .input-group input:valid~label{
+    top: 0;
+    background-color: #fff;
+    
+  }
+  /* .last
+  {
+   
+    background-color: blue; 
+    display: flex;
+    justify-content: space-between;
+  }
+  .last p a{
+    color: blue;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding: 15px;
+  } */
+  .account-box button{
+    background-color: green;
+    border: none;
+    outline: none;
+    margin-left: 150px;
+    border-radius: 10px;
+    padding: 15px 40px;
+    color: white;
+    letter-spacing: 1px;
+  }
+  
+  .account-box button:hover{
+    background-color: rgb(8, 170, 8);
+  }
+  
+  
+  
+  
+
+  .input-group input:valid{
+    border: 2px solid green;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;  }
+   .input-group .long{
+    position: absolute;
+    left: 94px;
+  } 
+  .login-container{
+    width: 800px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+  }
+  .sidebar img{
+        width: 200px;
+        height: 200px;
+        margin-left: 80px;
+        margin-top: 10px;
+        border-radius: 40%;
+  }
+  .sidebar .description{
+        padding-left: 20px;
+        padding-top: 5px;
+       
+        
+  }
+  .sidebar{
+    background-color:teal;
+    height: 95%;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+
+        <div class="sidebar">
+            <img src="farmfidu logo.jpg" alt="">
+            <div class="description">Welcome To FARMFIDU stable market access for the farmers  </div>
+        </div>
+    <form action="connect.php" method="post" class="account-box">
+        <h2>CREATE AN ACCOUNT</h2>
+        <div class="input-group">
+            <input type="text" id="firstname" name="firstname" required>
+            <label for="firstname">Enter Name</label>
+            
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" name="password" required >
+            <label for="password" class="long"> Enter Password</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="phonenumber" name="phonenumber" required>
+          <label for="phone" class="phone">Enter Phone Number</label>
+          
+      </div>
+        <button>Next</button>
+    </form>
+</div>
+</body>
+</html>

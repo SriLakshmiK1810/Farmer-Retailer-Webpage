@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    
+
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-bar {
+  display: flex;
+  font-weight: bold;
+  width: 500px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  cursor: pointer;
+  /* background-color: red; */
+}
+
+.nav-bar > div:hover,
+.nav-bar > .active {
+  height: 38px;
+  padding-top: 7px;
+  border-bottom: 5px solid green;
+  color: green;
+}
+.buttons span:active,
+.shop-container button:active,
+.offer a:active {
+  opacity: 0.4;
+}
+.nav-bar > div:active {
+  opacity: 0.5;
+}
+.buttons {
+  margin-right: 50px;
+}
+.buttons span {
+  cursor: pointer;
+  font-size: 25px;
+  padding: 10px;
+}
+.buttons span:hover {
+  color: orange;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    
+}
+.logo h1{
+    padding-left: 20px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+  
+   
+}
+.buttons{
+    /* background-color: red; */
+    display: flex;
+    margin-left: 10px;
+    margin-right: 0px;
+    align-items: center;
+}
+.buttons h3{
+    padding-right: 10px;
+    font-size: 18px;
+    color: teal;
+}
+.header .buttons .user{
+    height: 40px;
+    width: 40px;
+    background-color:black;
+    border-radius: 50%;
+   
+}
+.main {
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image img {
+  height: 450px;
+  width: 450px;
+  margin-left: 80px;
+  border-radius: 10px;
+}
+.description {
+  margin-right: 150px;
+  
+  /* background-color:red; */
+}
+
+.description h3 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.description h1 {
+  font-size: 40px;
+}
+.description > p {
+  margin-bottom: 20px;
+}
+/* .description a {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-weight: 45c 00;
+  color: white;
+  background-color: green;
+}
+.description a:hover,
+.shop .shop-container button:hover,
+.offer a:hover {
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+  border-radius: 15px;
+}
+.description a:active {
+  opacity: 0.2;
+} */
+
+   
+   .description img{
+    width: 180px;
+    height: 190px;
+    position: absolute;
+    right: 100px;
+    top: 120px;
+   }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+          <img src="farmfidu logo.jpg" />
+          <h1>FARMFIDU</h1>
+        </div>
+        <div class="nav-bar">
+          <div class="active">HOME</div>
+          <div>GROCERY</div>
+          <div>JUICE</div>
+          <div>ABOUT</div>
+          <div>CONTACT</div>
+        </div>
+        <div class="buttons">
+            <h3>username</h3>
+            <div class="profile1.jpg"></div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="image">
+          <img src="main-farmer.jpg" alt="">
+        </div>
+        <div class="description">
+          
+          
+          <img src="corn.avif" alt="" class="corn">
+  
+          <div class="right-side">
+            <h3>Best Quality Products</h3>
+          <h1>
+            Join The Organic <br />
+            Movement!
+          </h1>
+          
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
+          </p>
+          
+  
+          </div>
+          
+          <!-- <a href="">SHOP NOW</a> -->
+        </div>
+      </div>
+  
+</body>
+</html>
