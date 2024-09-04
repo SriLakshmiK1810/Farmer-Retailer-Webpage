@@ -1,24 +1,32 @@
 <?php
-   include("connect.php");
-   if(isset($_POST["submit"])){
-    $username = $_POST["username"];
-    $password = $_POST["password"];
 
 
-    $sql = "select * from login where username = '$username' and password = '$password'";
-    $result = mysqli_query($conn, $sql);
-    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-    if($count == 1){
-        header("page5.html");
-    }
-    else{
-         echo '<script>
-           window.location.href = "page2.html";
-           alert("login failed. Invalid username or password")
-           <script>';
-    }
-   }
+$conn= new mysqli('localhost','root','','test')or die("Could not connect to mysql".mysqli_error($con));
 
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+
+$firstname = $_POST['firstname'];
+$password = $_POST['password'];
+
+
+$query = "SELECT * FROM registration WHERE firstname = '$firstname' AND password = '$password'";
+$result = $conn->query($query);
+
+
+if ($result->num_rows > 0) {
+    
+    header("Location: page5.php");
+    exit;
+} else {
+    
+    header("Location: 404.php");
+    exit;
+}
+
+$conn->close();
 
 ?>
